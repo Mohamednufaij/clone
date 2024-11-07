@@ -1,0 +1,328 @@
+/* Header Contact Section */
+.container-fluid {
+    background-color: #000; /* Set the background color back to black */
+    color: orange; /* Set text color to orange */
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+/* Contact details should be on one line */
+.col-md-6.text-start {
+    display: flex;
+    gap: 10px; /* Adjust the gap between email and phone */
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the start */
+}
+
+.col-md-6.text-start p {
+    color: orange;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.col-md-6.text-start p i {
+    margin-right: 10px;
+}
+
+/* Auth links */
+.col-md-6.text-end {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.col-md-6.text-end a {
+    color: orange;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.col-md-6.text-end a i {
+    margin-right: 5px;
+}
+
+.col-md-6.text-end a:hover {
+    text-decoration: underline;
+}
+
+
+/* Container that includes both header and hero */
+.header-hero-container {
+    background-image: url('books2.jpeg'); /* Background image that spans both header and hero */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px; /* Adjust padding to make space for hero section */
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    background: transparent; /* Transparent to let the background image show through */
+}
+
+header h1 {
+    color: orange;
+    font-size: 24px;
+    margin: 0;
+}
+
+header img {
+    width: 30px;
+    height: auto;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    /* text-decoration: underline; */
+    background-color: black;
+    border-radius:8px;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header .d-flex {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 150px; /* Adjust top padding to move content below the header */
+    text-align: center;
+}
+
+.hero h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn-primary {
+        font-size: 16px;
+    }
+}
+
+/* Best Platform Section */
+.best-platform {
+    width: 80%; /* Width of the section */
+    max-width: 1200px; /* Optional: Maximum width */
+    background-color: black; /* Yellow background for the section */
+    position: relative; /* For positioning */
+    margin: -100px auto 0; /* Negative margin to pull it up half into the hero */
+    z-index: 2; /* Above the hero */
+    padding: 40px 0; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Box shadow for depth */
+}
+
+.best-platform h2 {
+    margin-bottom: 30px; /* Space below the heading */
+    color: white;
+}
+
+.best-platform .row {
+    margin-top: 20px; /* Space between heading and icons */
+}
+
+.best-platform .col-md-4 {
+    background-color: #FFDF00;
+    width: 30%;
+    margin-left: 25px; /* Yellow background for each item */
+    padding: 15px; /* Padding inside the item */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .best-platform .col-md-4 {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Space between items */
+    }
+}
+
+
+.welcome-section {
+    padding: 60px 0; /* Adjust the padding for the section */
+}
+
+.image-container {
+    position: relative;
+    height: 500px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.event-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /* Ensure the overlay takes the full width */
+    bottom: 0; /* Ensure the overlay takes the full height */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for the overlay content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the start */
+}
+
+.event-overlay h2 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.event-overlay ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.event-overlay li {
+    margin-bottom: 15px; /* Space between items */
+}
+
+.event-overlay .icon {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+.apply-section {
+    background-color: #f9f9f9; /* Light background color for the section */
+}
+
+.card {
+    border: 1px solid #ddd; /* Light border for the cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: box-shadow 0.3s; /* Transition effect for hover */
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card h2 {
+    font-size: 1.5rem; /* Adjust font size for headings */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.card p {
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #555; /* Darker color for the text */
+}
+
+.btn {
+    /* width: 100%; Make buttons full width */
+    padding: 10px; /* Add padding for buttons */
+    font-size: 1.1rem; /* Slightly increase font size for buttons */
+    border-radius: 5px; /* Rounded button corners */
+}
+
+/* Base Styles */
+.apply-section .card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 870px) {
+    .apply-section .row {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+    }
+
+    .apply-section .card {
+        width: 100%; /* Ensure cards take full width */
+        margin-bottom: 20px; /* Add margin between stacked cards */
+    }
+
+    .header-hero-container header {
+        flex-direction: column; /* Stack header items on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .header-hero-container header nav {
+        margin-top: 10px; /* Add space between logo and nav on small screens */
+    }
+
+    .best-platform h2, .welcome-section h2 {
+        font-size: 1.5rem; /* Adjust heading sizes for smaller screens */
+    }
+
+    .welcome-section p {
+        font-size: 0.9rem; /* Adjust paragraph size for readability */
+    }
+
+    .hero h4 {
+        font-size: 1.2rem; /* Adjust h4 size for small screens */
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Adjust h2 size for small screens */
+    }
+}
+@media (max-width: 870px) {
+    .best-platform .row > div {
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+}
